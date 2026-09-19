@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The number</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <h1>Guess The Number</h1>
+
+   <div class="container">
+     <form action="" class="inputform">
+       <div>
+            <label for="Guessfield">Guess The Number :</label>
+        <input type="text" id="Guessfield" class="Guesses">
+       </div>
+        <div class="submitbutton">
+            <input type="submit" id="submit">
+        </div>
+
+      
+    </form>
+
+    <div class="result">
+        <p>Previous Number: <span class="firstresult"></span></p>
+        <p>Guesses Remaining: <span class="lastresult">10</span></p>
+        <p id="loworhigh"></p>
+        <h2 id="newGame" style="display: none;">Start Again</h2>
+
+    </div>
+   </div>
+
+    <script src="randomNumber.js"></script>
+</body>
+</html>
